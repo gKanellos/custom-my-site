@@ -4,7 +4,19 @@
   
 <div id="content">
     <div class="container active">
-      <h1>hello</h1>
+     <div class="elementor-element elementor-element-4b62a5e elementor-widget elementor-widget-rhye-widget-content-block" data-id="4b62a5e" data-element_type="widget" data-widget_type="rhye-widget-content-block.default">
+				<div class="elementor-widget-container">
+			
+		<div class="section section-content clearfix  " data-arts-os-animation="animated">
+						<div class="section-content__inner">
+									<div class="section-content__wrapper-heading">
+																			<div class="section-content__heading split-text" data-split-text-type="lines,words" data-split-text-set="words"><h2 style=""><div class="split-text__line overflow" style="display: block; text-align: left; position: relative; opacity: 1; visibility: inherit; transform: translate(0%, 0%);"><span style="color: #e5e8ea;"><div style="position: relative; display: inline-block; transform: translate(0px, 0%);" class="split-text__word">I’m</div> <span style="color: #f31c29;"><div style="position: relative; display: inline-block; transform: translate(0px, 0%);" class="split-text__word">Gabrielle</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0%);" class="split-text__word">Kanellos</div></span><div style="position: relative; display: inline-block; transform: translate(0px, 0%);" class="split-text__word">,</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0%);" class="split-text__word">a</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0%);" class="split-text__word">designer</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0%);" class="split-text__word">and</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0%);" class="split-text__word">front-end</div> <div style="position: relative; display: inline-block; transform: translate(0px, 0%);" class="split-text__word">developer.</div></span></div></h2></div>
+											</div>
+															</div>
+														</div>
+
+				</div>
+				</div>
       
     </div>
       <canvas class="webgl"></canvas>
