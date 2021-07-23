@@ -76,159 +76,159 @@ section{
 </style>
 
 <script>
+//Loading
+const textureLoader = new THREE.TextureLoader()
 
-    //Loading
-    const textureLoader = new THREE.TextureLoader()
-    const normalTexture = textureLoader.load('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxZE_9Bv7dRgNFbh8UodSl2r5HfxmalpVEeQ&usqp=CAU')
-    // Canvas
-    const canvas = document.querySelector('canvas.webgl')
+// Canvas
+const canvas = document.querySelector('canvas.webgl')
 
-    // Scene
-    const scene = new THREE.Scene()
+// Scene
+const scene = new THREE.Scene()
 
-    // Objects
-    const geometry = new THREE.SphereBufferGeometry(.6, 64, 64);
-
-    // Materials
-
-    const material = new THREE.MeshStandardMaterial()
-    material.metalness = 0.7
-    material.roughness = 0.2, 
-    material.normalMap = normalTexture;
-    material.color = new THREE.Color(0x292929)
+// Objects
+const geometry = new THREE.PlaneGeometry( 1, 1.3 );
 
 
-    // Mesh
-    const sphere = new THREE.Mesh(geometry,material)
-    scene.add(sphere)
-
-    // Lights
-
-    const pointLight = new THREE.PointLight(0xffffff, 0.1)
-    pointLight.position.x = 2
-    pointLight.position.y = 3
-    pointLight.position.z = 4
-    scene.add(pointLight)
-
-    const pointLight2 = new THREE.PointLight(0xff0000, 0.2)
-    //pointLight.position.x = 2
-    //pointLight.position.y = 3
-    //pointLight.position.z = 4
-    pointLight2.position.set(-1.86,1,-1.65)
-    pointLight2.intensity = 10
-    scene.add(pointLight2)
+const material = new THREE.MeshBasicMaterial( {
+     map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/07/Frame-7.jpg')
+   } );
+// image 1
+  const image1 = new THREE.Mesh(geometry, material)
+  image1.position.set(1,-.8)
+ //image 2
+  const image2 = new THREE.Mesh(geometry, material)
+  image2.position.set(-1,.8)
+  
+  scene.add(image2)
 
 
-    const pointLight3 = new THREE.PointLight(0x03c6fc, 2)
-    //pointLight.position.x = 2
-    //pointLight.position.y = 3
-    //pointLight.position.z = 4
-    pointLight3.position.set(2.14,-3,-1.98)
-    pointLight3.intensity = 6.8
-    scene.add(pointLight3)
+
+let objs = [image1, image2]
+
+  scene.add(image1)
+// Lights
+
+const pointLight = new THREE.PointLight(0xffffff, 0.1)
+pointLight.position.x = 2
+pointLight.position.y = 3
+pointLight.position.z = 4
+scene.add(pointLight)
+
+const pointLight2 = new THREE.PointLight(0xff0000, 0.2)
+//pointLight.position.x = 2
+//pointLight.position.y = 3
+//pointLight.position.z = 4
+pointLight2.position.set(-1.86,1,-1.65)
+pointLight2.intensity = 10
+scene.add(pointLight2)
 
 
-    /**
-     * Sizes
-     */
-    const sizes = {
-        width: window.innerWidth,
-        height: window.innerHeight
-    }
+const pointLight3 = new THREE.PointLight(0x03c6fc, 2)
+//pointLight.position.x = 2
+//pointLight.position.y = 3
+//pointLight.position.z = 4
+pointLight3.position.set(2.14,-3,-1.98)
+pointLight3.intensity = 6.8
+scene.add(pointLight3)
 
-    window.addEventListener('resize', () =>
-    {
-        // Update sizes
-        sizes.width = window.innerWidth
-        sizes.height = window.innerHeight
 
-        // Update camera
-        camera.aspect = sizes.width / sizes.height
-        camera.updateProjectionMatrix()
+/**
+ * Sizes
+ */
+const sizes = {
+    width: window.innerWidth,
+    height: window.innerHeight
+}
 
-        // Update renderer
-        renderer.setSize(sizes.width, sizes.height)
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-    })
+window.addEventListener('resize', () =>
+{
+    // Update sizes
+    sizes.width = window.innerWidth
+    sizes.height = window.innerHeight
 
-    /**
-     * Camera
-     */
-    // Base camera
-    const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-    camera.position.x = 0
-    camera.position.y = 0
-    camera.position.z = 2
-    scene.add(camera)
+    // Update camera
+    camera.aspect = sizes.width / sizes.height
+    camera.updateProjectionMatrix()
 
-    // Controls
-    // const controls = new OrbitControls(camera, canvas)
-    // controls.enableDamping = true
-
-    /**
-     * Renderer
-     */
-    const renderer = new THREE.WebGLRenderer({
-        canvas: canvas,
-    //makes background transparent so can set it in CSS
-        alpha: true
-    })
+    // Update renderer
     renderer.setSize(sizes.width, sizes.height)
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+})
 
-    /**
-     * Animate
-     */
+/**
+ * Camera
+ */
+// Base camera
+const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
+camera.position.x = 0
+camera.position.y = 0
+camera.position.z = 2
+scene.add(camera)
 
-    document.addEventListener('mousemove', onDocumentMouseMove)
-    let mouseX = 0;
-    let mouseY = 0;
+// Controls
+// const controls = new OrbitControls(camera, canvas)
+// controls.enableDamping = true
 
-    let targetX = 0;
-    let targetY = 0;
+/**
+ * Renderer
+ */
+const renderer = new THREE.WebGLRenderer({
+    canvas: canvas,
+  //makes background transparent so can set it in CSS
+    alpha: true
+})
+renderer.setSize(sizes.width, sizes.height)
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
-    const windowHalfX = window.innerWidth / 2;
-    const windowHalfY = window.innerHeight / 2;
+/**
+ * Animate
+ */
 
-    function onDocumentMouseMove(event) {
-    mouseX = (event.clientX -  windowHalfX)
-    mouseY = (event.clientY -  windowHalfY)
-    }
+document.addEventListener('mousemove', onDocumentMouseMove)
+let mouseX = 0;
+let mouseY = 0;
+
+let targetX = 0;
+let targetY = 0;
+
+const windowHalfX = window.innerWidth / 2;
+const windowHalfY = window.innerHeight / 2;
+
+function onDocumentMouseMove(event) {
+  mouseX = (event.clientX -  windowHalfX)
+  mouseY = (event.clientY -  windowHalfY)
+}
 
 
-    const updateSphere = (event) => {
-    sphere.position.y = window.scrollY * .001
-    }
-    window.addEventListener('scroll', updateSphere);
 
+const clock = new THREE.Clock()
 
-    const clock = new THREE.Clock()
+const tick = () =>
+{
 
-    const tick = () =>
-    {
+    targetX = mouseX * .001
+    targetY = mouseY * .001
 
-        targetX = mouseX * .001
-        targetY = mouseY * .001
+    const elapsedTime = clock.getElapsedTime()
 
-        const elapsedTime = clock.getElapsedTime()
+    // Update objects
+   // sphere.rotation.y = .2 * elapsedTime
+   for (const image of objs){
+    image.rotation.y += .5 * (targetX - image.rotation.y)
+    image.rotation.x += .05 * (targetY - image.rotation.x)
+    image.position.z += .05 * (targetY - image.rotation.x)
+   }
+    // Update Orbital Controls
+    // controls.update()
 
-        // Update objects
-        sphere.rotation.y = .5 * elapsedTime
-    
-        sphere.rotation.y += .5 * (targetX - sphere.rotation.y)
-        sphere.rotation.x += .05 * (targetY - sphere.rotation.x)
-        sphere.position.z += .05 * (targetY - sphere.rotation.x)
-        // Update Orbital Controls
-        // controls.update()
+    // Render
+    renderer.render(scene, camera)
 
-        // Render
-        renderer.render(scene, camera)
+    // Call tick again on the next frame
+    window.requestAnimationFrame(tick)
+}
 
-        // Call tick again on the next frame
-        window.requestAnimationFrame(tick)
-    }
-
-    tick()
+tick()
 
 
     //Capture the scroll wheel
@@ -247,13 +247,10 @@ section{
     
     
     if (i == 1 && activeSection.nextElementSibling) {
-    window.open("/homepage",'_self',false);
+    window.open("/projects",'_self',false);
     
     } 
     }
-
-
-
 
 </script>
 
