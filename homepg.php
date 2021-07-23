@@ -84,6 +84,7 @@ const canvas = document.querySelector('canvas.webgl')
 
 // Scene
 const scene = new THREE.Scene()
+scene.background = new THREE.Color( 0x0f1c28 );
 
 // Objects
 const geometry = new THREE.PlaneGeometry( 1, 1.3 );
@@ -113,23 +114,6 @@ pointLight.position.x = 2
 pointLight.position.y = 3
 pointLight.position.z = 4
 scene.add(pointLight)
-
-const pointLight2 = new THREE.PointLight(0xff0000, 0.2)
-//pointLight.position.x = 2
-//pointLight.position.y = 3
-//pointLight.position.z = 4
-pointLight2.position.set(-1.86,1,-1.65)
-pointLight2.intensity = 10
-scene.add(pointLight2)
-
-
-const pointLight3 = new THREE.PointLight(0x03c6fc, 2)
-//pointLight.position.x = 2
-//pointLight.position.y = 3
-//pointLight.position.z = 4
-pointLight3.position.set(2.14,-3,-1.98)
-pointLight3.intensity = 6.8
-scene.add(pointLight3)
 
 
 /**
