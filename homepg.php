@@ -38,7 +38,7 @@ html,
 body
 {
     height: 100vh;
-    font-family: 'Poppins';
+    
    background: rgb(24,24,24);
   
 }
@@ -53,7 +53,7 @@ body {
     top: 0;
     left: 0;
     outline: none;
-  mix-blend-mode: exclusion;
+  mix-blend-mode: difference;
 }
 
 .container {
@@ -87,17 +87,20 @@ const scene = new THREE.Scene()
 scene.background = new THREE.Color( 0x0f1c28 );
 
 // Objects
-const geometry = new THREE.PlaneGeometry( 1, 1.3 );
+const geometry = new THREE.PlaneGeometry( .9, .9 );
 
 
 const material = new THREE.MeshBasicMaterial( {
-     map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/07/Frame-7.jpg')
+     map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/07/Delta-banner.jpg')
+   } );
+	const material2 = new THREE.MeshBasicMaterial( {
+     map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/07/onewater-min-1.jpg')
    } );
 // image 1
   const image1 = new THREE.Mesh(geometry, material)
   image1.position.set(1,-.8)
  //image 2
-  const image2 = new THREE.Mesh(geometry, material)
+  const image2 = new THREE.Mesh(geometry, material2)
   image2.position.set(-1,.8)
   
   scene.add(image2)
