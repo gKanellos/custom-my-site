@@ -48,7 +48,10 @@
 
             </div>
         </div>
-
+        <div class="scroll-down">
+            <p style="color:white"> Scroll to Discover</p>    
+            <div class="scroller"></div>
+        </div>
     </div>
     <canvas class="webgl"></canvas>
 </div>
@@ -99,6 +102,33 @@
         section {
             height: 100vh;
             background: white;
+        }
+
+        .scroller {
+        margin-top:20px;
+        width: 2px;
+        height: 15px;
+        border-radius: 25%;
+        background-color: #fff;
+        animation-name: scroll;
+        animation-duration: 2.2s;
+        margin:3rem;
+        animation-iteration-count: infinite;
+        margin:0px auto;
+        }
+
+        .scroll-down{
+        position:absolute;
+        top:80%;
+        display:block;
+        text-align:center;
+        right:50%;
+        }
+
+        @keyframes scroll {
+        0% { opacity: 0; }
+        5% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(25px); opacity: 0;}
         }
         </style>
 
