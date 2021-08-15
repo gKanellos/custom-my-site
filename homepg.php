@@ -44,7 +44,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> <!-- to here-->
 
             </div>
         </div>
@@ -150,24 +150,25 @@
         const material = new THREE.MeshBasicMaterial({
             map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/07/Delta-banner.jpg')
         });
-        const material2 = new THREE.MeshBasicMaterial({
-            map: textureLoader.load(
-                'https://gabriellekanellos.com/wp-content/uploads/2021/07/onewater-min-1.jpg')
-        });
+        const material2 = new THREE.MeshBasicMaterial( {color: 0xffff00} );
         // image 1
+
+        material2.color = new THREE.Color(0xff0000)
+
         const image1 = new THREE.Mesh(geometry, material)
         image1.position.set(1, -.8)
         //image 2
         const image2 = new THREE.Mesh(geometry, material2)
         image2.position.set(-1, .8)
 
+        scene.add(image1)
         scene.add(image2)
 
 
 
         let objs = [image1, image2]
 
-        scene.add(image1)
+
         // Lights
 
         const pointLight = new THREE.PointLight(0xffffff, 0.1)
@@ -219,7 +220,8 @@
         const renderer = new THREE.WebGLRenderer({
             canvas: canvas,
             //makes background transparent so can set it in CSS
-            alpha: true
+            alpha: true,
+            antialias: true
         })
         renderer.setSize(sizes.width, sizes.height)
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
