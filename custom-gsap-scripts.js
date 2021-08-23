@@ -11,8 +11,9 @@ let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".transition-section",
     scrub: 1,
-    end: "300%",
-    pin: true
+    end: "100%",
+    pin: true,
+	pinType: "transform"
   }
 });
 
