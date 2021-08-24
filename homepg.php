@@ -12,8 +12,7 @@
                         <div class="section-content__wrapper-heading">
                             <div>
                                
-                                <h2>
-                                   
+                                <h2 class="split-text-group">
                                         <span style="color: #e5e8ea;">
                                             <div style="position: relative; display: inline-block;"
                                                 class="split-text__word1">I’m</div> <span style="color: #FF2633;">
