@@ -1,17 +1,17 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".orange p", {
-  scrollTrigger: ".orange", 
-  duration: 3, x: 600, opacity: 0, scale: 0, repeat:-1
- 
-});
 
-gsap.from(".split-text__word1", { 
-    y: 10, 
-    opacity: 0, 
-    delay: 0.5, 
-    stagger: 0.1,
+  gsap.from(".orange p", {
+    scrollTrigger: ".orange", opacity: 0, y:30, repeat:-1
+   
   });
+  window.onload = function() {
+
+  gsap.from(".split-text-group .split-text__word1", {
+    scrollTrigger: ".split-text-group", opacity: 0, y:20, delay:5, stagger:0.1
+   
+  });
+  }
 
 let tl = gsap.timeline({
   scrollTrigger: {
