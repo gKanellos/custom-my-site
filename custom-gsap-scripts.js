@@ -1,17 +1,28 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
+document.addEventListener("DOMContentLoaded", function(event) {
+  
+    window.onload = function() {
+      
+       window.requestAnimationFrame(function() {
+      
+        gsap.from(".split-text-group .split-text__word1", { opacity: 0, y:20, delay:3, stagger:0.1});
+
+       });
+      
+    };
+  
+});
+
   gsap.from(".orange p", {
     scrollTrigger: ".orange", opacity: 0, y:30, repeat:-1
    
   });
-  window.onload = function() {
+  
 
-  gsap.from(".split-text-group .split-text__word1", {
-    scrollTrigger: ".split-text-group", opacity: 0, y:20, delay:5, stagger:0.1
-   
-  });
-  }
+  //gsap.from(".split-text-group .split-text__word1", { opacity: 0, y:20, delay:5, stagger:0.1});
+
 
 let tl = gsap.timeline({
   scrollTrigger: {
