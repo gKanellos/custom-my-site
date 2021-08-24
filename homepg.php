@@ -4,39 +4,40 @@
 
 
 <div id="content">
+   
     <div class="container active">
 
                 <div class="section section-content clearfix  " data-arts-os-animation="animated">
                     <div class="section-content__inner">
                         <div class="section-content__wrapper-heading">
-                            <div class="section-content__heading split-text" data-split-text-type="lines,words"
-                                data-split-text-set="words">
-                                
+                            <div>
+                               
                                 <h2>
-                                    <div class="split-text__line overflow"
-                                        style="display: block; text-align: left; position: relative; opacity: 1; visibility: inherit; transform: translate(0%, 0%);">
+                                   
                                         <span style="color: #e5e8ea;">
-                                            <div style="position: relative; display: inline-block; transform: translate(0px, 0%);"
-                                                class="split-text__word">I’m</div> <span style="color: #FF2633;">
-                                                <div style="position: relative; display: inline-block; transform: translate(0px, 0%);"
-                                                    class="split-text__word">Gabrielle</div>
-                                                <div style="position: relative; display: inline-block; transform: translate(0px, 0%);"
-                                                    class="split-text__word">Kanellos</div>
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">I’m</div> <span style="color: #FF2633;">
+                                                <div style="position: relative; display: inline-block;"
+                                                    class="split-text__word1">Gabrielle</div>
+                                                <div style="position: relative; display: inline-block;"
+                                                    class="split-text__word1">Kanellos</div>
                                             </span>
-                                            <div style="position: relative; display: inline-block; transform: translate(0px, 0%);"
-                                                class="split-text__word">,</div>
-                                            <div style="position: relative; display: inline-block; transform: translate(0px, 0%);"
-                                                class="split-text__word">a</div>
-                                            <div style="position: relative; display: inline-block; transform: translate(0px, 0%);"
-                                                class="split-text__word">designer</div>
-                                            <div style="position: relative; display: inline-block; transform: translate(0px, 0%);"
-                                                class="split-text__word">and</div>
-                                            <div style="position: relative; display: inline-block; transform: translate(0px, 0%);"
-                                                class="split-text__word">front-end</div>
-                                            <div style="position: relative; display: inline-block; transform: translate(0px, 0%);"
-                                                class="split-text__word">developer.</div>
-                                        </span></div>
-                                </h2>
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">,</div>
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">a</div>
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">designer</div>
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">and</div>
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">front-end</div>
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">developer.</div>
+                                        </span>
+                            
+                                   
+                                    </h2>
                             </div>
                         </div>
                     </div>
@@ -49,7 +50,6 @@
     </div>
     <canvas class="webgl"></canvas>
 </div>
-
 
 <div style="display:none">
     <div>
@@ -126,7 +126,7 @@
         100% { transform: translateY(25px); opacity: 0;}
         }
         </style>
-
+  
         <script>
         //Loading
         const textureLoader = new THREE.TextureLoader()
