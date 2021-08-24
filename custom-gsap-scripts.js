@@ -6,6 +6,12 @@ gsap.from(".orange p", {
  
 });
 
+gsap.from(".split-text__word1", { 
+    y: 10, 
+    opacity: 0, 
+    delay: 0.5, 
+    stagger: 0.1,
+  });
 
 let tl = gsap.timeline({
   scrollTrigger: {
