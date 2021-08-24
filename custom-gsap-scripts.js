@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
        window.requestAnimationFrame(function() {
       
         gsap.from(".split-text-group .split-text__word1", { opacity: 0, y:20, delay:3, stagger:0.15});
+        gsap.from(".scroll-down", { opacity: 0, delay:4.5, duration:2});
         gsap.to(material2, { opacity: 1, delay:4.5, duration:2});
 
        });
