@@ -2,7 +2,8 @@
 
 <?php get_header(); ?>
 
-<section class="elementor-section elementor-top-section elementor-element elementor-element-752a8e3 elementor-section-height-full elementor-section-boxed elementor-section-height-default elementor-section-items-middle">
+<section id="about-intro">
+<div class="elementor-section elementor-top-section elementor-element elementor-element-752a8e3 elementor-section-height-full elementor-section-boxed elementor-section-height-default elementor-section-items-middle">
     <div class="elementor-container elementor-column-gap-default">
         <div class="section section-content clearfix" data-arts-os-animation="animated">
             <div class="section-content__inner">
@@ -39,8 +40,8 @@
             </div>
         </div> <!-- to here-->
     </div>
+</div>
 </section>
-
 
 <section class="transition-section row container-fluid">
   
@@ -176,6 +177,13 @@ img{
 
 .image2 {
   left:20%;
+}
+
+@media (min-width: 768px){
+   #about-intro .elementor-section.elementor-section-height-full {
+    height: auto !important;
+    margin-top: 50vh;
+  }
 }
 /*  Social */
 
