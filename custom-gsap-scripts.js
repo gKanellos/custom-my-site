@@ -23,8 +23,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
   
 
-  //gsap.from(".split-text-group .split-text__word1", { opacity: 0, y:20, delay:5, stagger:0.1});
-
 
 let tl = gsap.timeline({
   scrollTrigger: {
@@ -36,8 +34,8 @@ let tl = gsap.timeline({
   }
 });
 
-let images = gsap.utils.toArray(".image img");
-let texts = gsap.utils.toArray(".text p");
+let images = gsap.utils.toArray(".image-about img");
+let texts = gsap.utils.toArray(".text-about h4");
 let transitionDuration = 0.5;
 let stayDuration = 1;
 
