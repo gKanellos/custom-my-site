@@ -38,7 +38,7 @@
                 </div> <!-- to here-->
 
 </section>
-<section class="transition-section row">
+<section class="transition-section row container-fluid">
   
  <div class="images col-md-6">
   <div class="image1 image-about"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/Great_Wave_off_Kanagawa2_cr.jpg">
@@ -92,16 +92,17 @@ h4 {
 }
 
 .container {
-  height: 100vh;
+  /*height: 100vh;*/
+  margin-top:50vh;
   display: grid;
   place-items: center;
      }
 
-   .transition-section {
-    width: 100%;
+.transition-section {
+   width: 100%;
   height: 100vh;
-  padding: 0;
-  margin: 0;
+  padding: 0px 60px !important;
+  
   /*display: flex;*/
   align-items: center;
   justify-content: center;
