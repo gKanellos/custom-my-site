@@ -2,43 +2,46 @@
 
 <?php get_header(); ?>
 
-<section class="container-about">
-<div class="section section-content clearfix  " data-arts-os-animation="animated">
-                    <div class="section-content__inner">
-                        <div class="section-content__wrapper-heading">
-                            <div>
-                               
-                                <h2 class="split-text-group">
-                                        <span style="color: #e5e8ea;">
-                                            <div style="position: relative; display: inline-block;"
-                                                class="split-text__word1">Nice</div>
-                                                <div style="position: relative; display: inline-block;"
-                                                    class="split-text__word1">to</div>
-                                                <div style="position: relative; display: inline-block;"
-                                                    class="split-text__word1">meet</div>
-                                            <div style="position: relative; display: inline-block;"
-                                                class="split-text__word1">you</div>
-                                            <div style="position: relative; display: inline-block;"
-                                                class="split-text__word1">,</div>
-                                             <span style="color: #FF2633;">
-                                            <div style="position: relative; display: inline-block;"
-                                                class="split-text__word1">I'm</div>
-                                            <div style="position: relative; display: inline-block;"
-                                                class="split-text__word1">Gabrielle</div>
-                                              </span>
-                                            <div style="position: relative; display: inline-block;"
-                                                class="split-text__word1">!</div>
-                                           
-                                        </span>
-                            
+<section class="elementor-section elementor-top-section elementor-element elementor-element-752a8e3 elementor-section-height-full elementor-section-boxed elementor-section-height-default elementor-section-items-middle">
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="section section-content clearfix" data-arts-os-animation="animated">
+            <div class="section-content__inner">
+                <div class="section-content__wrapper-heading">
+                    <div>
+                       
+                        <h2 class="split-text-group">
+                                <span style="color: #e5e8ea;">
+                                    <div style="position: relative; display: inline-block;"
+                                        class="split-text__word1">Nice</div>
+                                        <div style="position: relative; display: inline-block;"
+                                            class="split-text__word1">to</div>
+                                        <div style="position: relative; display: inline-block;"
+                                            class="split-text__word1">meet</div>
+                                    <div style="position: relative; display: inline-block;"
+                                        class="split-text__word1">you</div>
+                                    <div style="position: relative; display: inline-block;"
+                                        class="split-text__word1">,</div>
+                                     <span style="color: #FF2633;">
+                                    <div style="position: relative; display: inline-block;"
+                                        class="split-text__word1">I'm</div>
+                                    <div style="position: relative; display: inline-block;"
+                                        class="split-text__word1">Gabrielle</div>
+                                      </span>
+                                    <div style="position: relative; display: inline-block;"
+                                        class="split-text__word1">!</div>
                                    
-                                    </h2>
-                            </div>
-                        </div>
+                                </span>
+                    
+                           
+                            </h2>
                     </div>
-                </div> <!-- to here-->
-
+                </div>
+            </div>
+        </div> <!-- to here-->
+    </div>
 </section>
+
+
 <section class="transition-section row container-fluid">
   
  <div class="images col-md-6">
