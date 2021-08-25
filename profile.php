@@ -2,7 +2,42 @@
 
 <?php get_header(); ?>
 
+<section class="container">
+<div class="section section-content clearfix  " data-arts-os-animation="animated">
+                    <div class="section-content__inner">
+                        <div class="section-content__wrapper-heading">
+                            <div>
+                               
+                                <h2 class="split-text-group">
+                                        <span style="color: #e5e8ea;">
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">Nice</div> <span style="color: #FF2633;">
+                                                <div style="position: relative; display: inline-block;"
+                                                    class="split-text__word1">to</div>
+                                                <div style="position: relative; display: inline-block;"
+                                                    class="split-text__word1">meet</div>
+                                            </span>
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">you</div>
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">,</div>
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">I'm</div>
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">Gabrielle</div>
+                                            <div style="position: relative; display: inline-block;"
+                                                class="split-text__word1">!</div>
+                                           
+                                        </span>
+                            
+                                   
+                                    </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- to here-->
 
+</section>
 <section class="transition-section row">
   
  <div class="images col-md-6">
@@ -55,6 +90,12 @@
 h4 {
   color:white !important;
 }
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+     }
 
    .transition-section {
     width: 100%;
