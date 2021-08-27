@@ -4,7 +4,7 @@
 
 <section id="about-intro">
 <div class="elementor-section elementor-top-section elementor-element elementor-section-height-full elementor-section-boxed elementor-section-height-default elementor-section-items-middle">
-    <div class="elementor-container elementor-column-gap-default">
+    <div class="container">
         <div class="section section-content clearfix" data-arts-os-animation="animated">
             <div class="section-content__inner">
                 <div class="section-content__wrapper-heading">
@@ -43,7 +43,7 @@
 </div>
 </section>
 
-<section class="transition-section row container-fluid">
+<section class="transition-section row container">
   
  <div class="images col-md-6">
   <div class="image1 image-about"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/Great_Wave_off_Kanagawa2_cr.jpg">
@@ -84,9 +84,9 @@
   
 </section>
 
-<section class="social-container elementor-section elementor-top-section elementor-element pb-medium elementor-section-boxed elementor-section-height-default elementor-section-items-middle">
-    <div class="elementor-container elementor-column-gap-default">
-
+<section class="pb-medium">
+    <div class="container social-container">
+          
             <a class="contact-item">
               <div class="contact-item-title">
               <h4>Github</h4>
@@ -99,6 +99,8 @@
               <p class="animated animatedFadeInUp fadeInUp">Explore my code pens</p>
               </div>
             </a>
+          
+         
             <a class="contact-item">
               <div class="contact-item-title">
               <h4>LinkedIn</h4>
@@ -111,7 +113,7 @@
               <p class="animated animatedFadeInUp fadeInUp">Reach out</p>
               </div>
             </a>
-       
+        
     </div>
 </section>
 
@@ -179,12 +181,11 @@ img{
   left:20%;
 }
 
-@media (min-width: 768px){
-   #about-intro .elementor-section.elementor-section-height-full {
+#about-intro .elementor-section.elementor-section-height-full {
     height: auto !important;
     margin-top: 50vh;
   }
-}
+
 /*  Social */
 
 
@@ -275,6 +276,9 @@ img{
      border: 1px solid #f31c29;
     padding:1em;
   }
+  .contact-item-title p{
+  color:white !important; 
+}
 }
 
 /* end media query */
