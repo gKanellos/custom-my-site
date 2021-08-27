@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <section id="about-intro">
-<div class="elementor-section elementor-top-section elementor-element elementor-element-752a8e3 elementor-section-height-full elementor-section-boxed elementor-section-height-default elementor-section-items-middle">
+<div class="elementor-section elementor-top-section elementor-element elementor-section-height-full elementor-section-boxed elementor-section-height-default elementor-section-items-middle">
     <div class="elementor-container elementor-column-gap-default">
         <div class="section section-content clearfix" data-arts-os-animation="animated">
             <div class="section-content__inner">
@@ -84,7 +84,7 @@
   
 </section>
 
-<section class="elementor-section elementor-top-section elementor-element elementor-element-752a8e3 elementor-section-height-full elementor-section-boxed elementor-section-height-default elementor-section-items-middle">
+<section class="social-container elementor-section elementor-top-section elementor-element pb-medium elementor-section-boxed elementor-section-height-default elementor-section-items-middle">
     <div class="elementor-container elementor-column-gap-default">
 
             <a class="contact-item">
