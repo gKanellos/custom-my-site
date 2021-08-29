@@ -318,6 +318,10 @@ img{
   font-size:1em;
 }
 
+.pin-spacer {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
 
 </style>
 
