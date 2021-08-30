@@ -107,10 +107,11 @@
               <p class="animated animatedFadeInUp fadeInUp">Connect with me</p>
               </div>
             </a>
-            <a class="contact-item">
+            <a class="contact-item" href="mailto:' + user + '@' + domain + '">
               <div class="contact-item-title">
               <h4>Contact</h4>
-              <p class="animated animatedFadeInUp fadeInUp">Reach out</p>
+              <p id="email" class="animated animatedFadeInUp fadeInUp"></p>
+              
               </div>
             </a>
         
@@ -210,7 +211,7 @@ img{
   height: 250px;
   }
   .contact-item:hover {
-  flex-grow: 1.3;
+  flex-grow: 1.9;
   background:#f31c29;
 }
 
@@ -333,5 +334,14 @@ img{
 
 </style>
 
+<script>
+
+  const user = 'gkanellos3',
+    domain = 'gmail.com',
+    element = document.getElementById('email');
+
+    element.innerHTML = user + '@' + domain;
+
+</script>
 
 <?php get_footer(); ?>
