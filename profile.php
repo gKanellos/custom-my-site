@@ -46,12 +46,12 @@
 <section class="transition-section row container">
   
  <div class="images col-md-6">
-  <div class="image1 image-about"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/Great_Wave_off_Kanagawa2_cr.jpg">
+  <div class="image1 image-about"><img src="">
   </div>
 
-  <div class="image2 image-about"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/0st9yhngses-benjamin-child.jpg"></div>
+  <div class="image2 image-about"><img src="https://gabriellekanellos.com/wp-content/uploads/2021/08/about-desk-1.png"></div>
    
-   <div class="image3 image-about"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/0st9yhngses-benjamin-child.jpg"></div>
+   <div class="image3 image-about"><img src="https://gabriellekanellos.com/wp-content/uploads/2021/08/Diploma.png"></div>
 
    <div class="image4 image-about"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/0st9yhngses-benjamin-child.jpg"></div>
 
@@ -147,7 +147,7 @@ h4 {
    
 }
 .content {
-  
+  margin-top:-20vh;
   text-align:left;  
 }
 
@@ -158,11 +158,12 @@ h4 {
 
 .images{
   display:flex;
-  
+  margin-top:-20vh;
 }
 .image-about {
-  width: 200px;
-  height: 100px;
+  
+  /*width: 200px;*/
+  /*height: 100px;*/
   position:absolute;
  /* position: absolute;
   z-index: 0;
@@ -173,12 +174,9 @@ h4 {
 img{
   width:100%;
 }
-.image1 {
-   left: 10%;
-}
-
-.image2 {
-  left:20%;
+.image3 {
+  top: -100px;
+    left: -50px;
 }
 
 #about-intro .elementor-section.elementor-section-height-full {
