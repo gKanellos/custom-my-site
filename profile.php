@@ -53,9 +53,9 @@
    
    <div class="image3 image-about"><img src="https://gabriellekanellos.com/wp-content/uploads/2021/08/Diploma.png"></div>
 
-   <div class="image4 image-about"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/0st9yhngses-benjamin-child.jpg"></div>
+   <div class="image4 image-about"><img src="https://gabriellekanellos.com/wp-content/uploads/2021/08/about-books.png"></div>
 
-   <div class="image5 image-about"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/0st9yhngses-benjamin-child.jpg"></div>
+   <div class="image5 image-about"><img src="https://gabriellekanellos.com/wp-content/uploads/2021/08/about-microphone.png"></div>
 
   </div>
   <div class="content col-md-6">
@@ -177,6 +177,11 @@ img{
 .image3 {
   top: -100px;
     left: -50px;
+}
+
+.image4{
+  top:50px;
+  left:240px;
 }
 
 #about-intro .elementor-section.elementor-section-height-full {
