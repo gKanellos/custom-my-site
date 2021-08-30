@@ -187,7 +187,7 @@ img{
 
 .image5 {
   top:55px;
-  left:20px;
+  left:35px;
 }
 
 #about-intro .elementor-section.elementor-section-height-full {
