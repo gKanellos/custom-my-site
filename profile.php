@@ -55,7 +55,7 @@
 
    <div class="image4 image-about"><img src="https://gabriellekanellos.com/wp-content/uploads/2021/08/about-books.png"></div>
 
-   <div class="image5 image-about"><img src="https://gabriellekanellos.com/wp-content/uploads/2021/08/about-microphone.png"></div>
+   <div class="image5 image-about"><img src="https://gabriellekanellos.com/wp-content/uploads/2021/08/about-microphone-1.png"></div>
 
   </div>
   <div class="content col-md-6">
@@ -182,6 +182,11 @@ img{
 .image4{
   top:50px;
   left:240px;
+}
+
+.image5 {
+  top:55px;
+  left:40px;
 }
 
 #about-intro .elementor-section.elementor-section-height-full {
