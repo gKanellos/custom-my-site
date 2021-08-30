@@ -87,13 +87,13 @@
 <section class="pb-medium">
     <div class="container social-container">
           
-            <a class="contact-item">
+            <a class="contact-item" href="https://github.com/gKanellos" target="_blank"> 
               <div class="contact-item-title">
               <h4>Github</h4>
               <p class="animated animatedFadeInUp fadeInUp">See some of my projects</p>
               </div>
             </a>
-            <a class="contact-item">
+            <a class="contact-item" href="https://codepen.io/gabriellemkan" target="_blank">
              <div class="contact-item-title">
               <h4>CodePen</h4>
               <p class="animated animatedFadeInUp fadeInUp">Explore my code pens</p>
@@ -101,7 +101,7 @@
             </a>
           
          
-            <a class="contact-item">
+            <a class="contact-item" href="https://www.linkedin.com/in/gabrielle-k/" target="_blank">
               <div class="contact-item-title">
               <h4>LinkedIn</h4>
               <p class="animated animatedFadeInUp fadeInUp">Connect with me</p>
@@ -109,7 +109,7 @@
             </a>
             <a class="contact-item">
               <div class="contact-item-title">
-              <h4>Email</h4>
+              <h4>Contact</h4>
               <p class="animated animatedFadeInUp fadeInUp">Reach out</p>
               </div>
             </a>
