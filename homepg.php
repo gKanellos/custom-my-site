@@ -64,7 +64,7 @@
         body {
             height: 100vh;
 
-            background: rgb(24, 24, 24);
+            background-color:#0f1c28;
 
         }
 
@@ -79,6 +79,16 @@
             outline: none;
             mix-blend-mode: difference;
         }
+
+        @media only screen and (max-device-width: 768px) {
+            .webgl {
+                display:none;
+            }
+            .scroll-down{
+                text-align:left !important;
+                right:initial !important;
+                }
+            }
 
         .container {
             height: 100vh;
