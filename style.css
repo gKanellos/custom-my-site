@@ -17,6 +17,9 @@
 	display:none;
 }
 
+
+
+
 .page-id-801 .circle-button__inner .svg-circle {
 	border: 1px solid white !important;
 }
@@ -33,10 +36,24 @@
 	fill:white;
 }
 
+.page-id-801 .svg-arrow-down {
+	fill:white;
+}
+
 .elementor-page-1796 .pb-medium {
 	padding-bottom:0px !important;
 }
 
 .elementor-page-1796 .pt-large {
 	padding-top:0px !important;
+}
+
+@media screen and (max-width: 767px){
+.list-projects__cover {
+    display: none;   
+}
+	.button.button_bordered.bg-white {
+		color: #FF2633;
+    background-color: white !important;
+	}
 }
