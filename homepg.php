@@ -141,14 +141,30 @@
         
 
 
-        const material = new THREE.MeshBasicMaterial({
-            map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/07/Delta-banner.jpg')
-        });
-        const material2 = new THREE.MeshBasicMaterial( {
-            map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/09/chronaly-banner-1-e1630954670608.jpg'), 
+        const material = new THREE.MeshBasicMaterial( {
+            map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/07/Delta-banner.jpg'), 
             transparent: true, 
             opacity: 0} );
-        // image 1
+
+        const material2 = new THREE.MeshBasicMaterial( {
+            map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/09/chronaly-homepage.jpg'), 
+            transparent: true, 
+            opacity: 0} );
+
+        const material3 = new THREE.MeshBasicMaterial( {
+            map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/09/newsroom-homepage.jpg'), 
+            transparent: true, 
+            opacity: 0} );
+
+        const material4 = new THREE.MeshBasicMaterial( {
+            map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/09/newsroom-homepage.jpg'), 
+            transparent: true, 
+            opacity: 0} );
+        
+        const material5 = new THREE.MeshBasicMaterial( {
+            map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/09/newsroom-homepage.jpg'), 
+            transparent: true, 
+            opacity: 0} );
 
         const image1 = new THREE.Mesh(geometry, material)
         image1.position.set(1, -.8)
@@ -156,13 +172,13 @@
         const image2 = new THREE.Mesh(geometry, material2)
         image2.position.set(-.1, .7)
         //image 3
-        const image3 = new THREE.Mesh(geometry, material2)
+        const image3 = new THREE.Mesh(geometry, material3)
         image3.position.set(1.5, .5)
         //image 4
-        const image4 = new THREE.Mesh(geometry, material2)
+        const image4 = new THREE.Mesh(geometry, material4)
         image4.position.set(-1.5, -.7)
         // image 5
-        const image5 = new THREE.Mesh(geometry, material2)
+        const image5 = new THREE.Mesh(geometry, material5)
         image5.position.set(-1.7, .8)
 
         scene.add(image1, image2, image3, image4, image5)
