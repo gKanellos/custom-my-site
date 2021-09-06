@@ -137,7 +137,7 @@
         scene.background = new THREE.Color(0x0f1c28);
 
         // Objects
-        const geometry = new THREE.PlaneGeometry(.7, .7);
+        const geometry = new THREE.PlaneGeometry(.8, .8);
         
 
 
