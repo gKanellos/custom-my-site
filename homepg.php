@@ -157,12 +157,12 @@
             opacity: 0} );
 
         const material4 = new THREE.MeshBasicMaterial( {
-            map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/09/newsroom-homepage.jpg'), 
+            map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/09/night-haze-homepage.jpg'), 
             transparent: true, 
             opacity: 0} );
         
         const material5 = new THREE.MeshBasicMaterial( {
-            map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/09/newsroom-homepage.jpg'), 
+            map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/09/one-water-homepage.jpg'), 
             transparent: true, 
             opacity: 0} );
 
