@@ -137,7 +137,7 @@
         scene.background = new THREE.Color(0x0f1c28);
 
         // Objects
-        const geometry = new THREE.PlaneGeometry(.9, .9);
+        const geometry = new THREE.PlaneGeometry(.7, .7);
         
 
 
@@ -165,21 +165,21 @@
             map: textureLoader.load('https://gabriellekanellos.com/wp-content/uploads/2021/09/one-water-homepage.jpg'), 
             transparent: true, 
             opacity: 0} );
-
+        // image1 delta
         const image1 = new THREE.Mesh(geometry, material)
-        image1.position.set(1, -.8)
-        //image 2
+        image1.position.set(1.6, -.7)
+        //image 2 chronaly top
         const image2 = new THREE.Mesh(geometry, material2)
-        image2.position.set(-.1, .7)
-        //image 3
+        image2.position.set(0, .7)
+        //image 3 newsroom top
         const image3 = new THREE.Mesh(geometry, material3)
-        image3.position.set(1.5, .5)
-        //image 4
+        image3.position.set(1.6, .7)
+        //image 4 night haze
         const image4 = new THREE.Mesh(geometry, material4)
-        image4.position.set(-1.5, -.7)
-        // image 5
+        image4.position.set(-1.6, -.7)
+        // image 5 one water top
         const image5 = new THREE.Mesh(geometry, material5)
-        image5.position.set(-1.7, .8)
+        image5.position.set(-1.6, .7)
 
         scene.add(image1, image2, image3, image4, image5)
         
