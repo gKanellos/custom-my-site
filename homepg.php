@@ -85,8 +85,7 @@
                 display:none;
             }
             .scroll-down{
-                text-align:left !important;
-                right:initial !important;
+                display:none !important;
                 }
             }
 
